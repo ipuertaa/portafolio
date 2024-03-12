@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+header{
+    background-color: aqua;
+    padding: 20px 0;
+}
+
+.navegacion{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+main{
+    background-color: red;
+}
+
+footer{
+    background-color: blue;
+}
+
+.iconos{
+    display: inline;
+}
