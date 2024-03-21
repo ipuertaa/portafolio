@@ -130,6 +130,7 @@ header .overlay .close{
     border: 2px solid gray;
     object-fit: cover;
     margin: 20px;
+    /*justify-content: space-between;*/
 }
 
 .educacion{
@@ -137,30 +138,43 @@ header .overlay .close{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: auto;
     padding: 30px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
 }
 
 .texto-educacion{
     background-color: yellow;
+    margin: auto;
+    padding: 30px;
 
 }
 
 .desplegables{
     background-color: blueviolet;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
 }
 
-.desplegables li{
-    margin-bottom: 20px;
-    font-size: 20px;
 
+summary{
+    cursor: pointer;
+    background-color: burlywood;
+    padding: 10px;
 }
 
-.desplegables li .more{
-    font-size: 40px;
-    color: yellow;
-    margin-left: 50px;
+details p{
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.trabajo{
+    background-color: gainsboro;
+    height: 100vh;
 }
 
 
@@ -188,6 +202,10 @@ header .overlay .close{
 
     .educacion{
         flex-direction: column;
+    }
+
+    .desplegables{
+        width: auto;
     }
     
 }
