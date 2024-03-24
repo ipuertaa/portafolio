@@ -137,27 +137,29 @@ header .overlay .close{
     background-color: palevioletred;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
     padding: 30px;
     min-height: 100vh;
-    max-height: auto;
 }
 
 .texto-educacion{
     background-color: yellow;
     margin: auto;
     padding: 30px;
+    width: 300px;
+
 
 }
 
 .desplegables{
     background-color: blueviolet;
     padding: 40px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 400px;
+    margin: auto;
+    
 }
 
 
@@ -174,8 +176,94 @@ details p{
 
 .trabajo{
     background-color: gainsboro;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.titulo-trabajo{
+    margin: 20px 20px 80px 20px;
+}
+
+.contenedor-tarjetas{
+    background-color: blueviolet;
+    width: 1000px;
+    min-height: 250px;
+}
+
+.tarjetas{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    background-color: aqua;
+    justify-content: center;
+}
+
+.tarjeta{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+
+.contenido-tarjeta{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenido-tarjeta:hover{
+    background-color: blue;
+    opacity: 0.9;
+}
+
+
+#tarjeta-aws{
+    background-image: url(imagenes/aws.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tarjeta-web{
+    background-image: url(imagenes/web.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tarjeta-python{
+    background-image: url(imagenes/python.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tarjeta-micro{
+    background-image: url(imagenes/stm32.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#detalles-trabajo{
+    background-color: gainsboro;
+    margin-top: 50px;
+    max-width: 800px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 780px){
@@ -202,10 +290,27 @@ details p{
 
     .educacion{
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .desplegables{
         width: auto;
+        margin: 0;
     }
+
+    .texto-educacion{
+        width: auto;
+    }
+
     
 }
+
+@media screen and (max-width: 1045px){
+
+    .contenedor-tarjetas, .detalles-trabajo{
+        width: 90%;
+    }
+}
+
+
+

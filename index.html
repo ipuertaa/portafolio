@@ -31,10 +31,10 @@
                 <li><a href="#">CV</a></li>
             </ul>
         </nav>
-        <a onclick="openNav()" class="desplegable" href="#"><button>Menu</button> </a>
+        <a onclick="openNav();" class="desplegable" href="#"><button>Menu</button> </a>
 
         <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <a onclick="closeNav();" href="" class="close">&times;</a>
 
             <div class="overlay-content">
                 <a href="#">Sobre mi</a>
@@ -102,8 +102,60 @@
         </section>
 
         <section class="trabajo">
-           <h1> Mi trabajo</h1>
+            <h1 class="titulo-trabajo">Mi trabajo</h1>
+
+            <div class="contenedor-tarjetas">
+                
+                <section class="tarjetas">
+
+                    <div class="tarjeta" id="tarjeta-aws">
+                        <div class="contenido-tarjeta">
+                            <h2>Titulo</h2>
+                            <a onclick="mostarDetalles(1);" href="#detalles-trabajo">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta" id="tarjeta-web">
+                        <div class="contenido-tarjeta">
+                            <h2>Titulo</h2>
+                            <a onclick="mostarDetalles(2);" href="#detalles-trabajo">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta" id="tarjeta-python">
+                        <div class="contenido-tarjeta">
+                            <h2>Titulo</h2>
+                            <a onclick="mostarDetalles(3);" href="#detalles-trabajo">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta" id="tarjeta-micro">
+                        <div class="contenido-tarjeta">
+                            <h2>Titulo</h2>
+                            <a onclick="mostarDetalles(4);" href="#detalles-trabajo">Ver detalles</a>
+                        </div>
+                    </div> 
+                </section>
+            
+            </div>
+
+            <div id="detalles-trabajo">
+                <div class="holis">
+                    <h1 id="titulo-detalles">Aquí van los detalles del trabajo</h1>
+                    <a onclick="closeDetalles();" href="#detalles-trabajo" class="cerrar">&times;</a>
+
+                </div>
+            
+                
+
+            
+                <p id="texto-detalles">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum quaerat quo, incidunt magni pariatur sequi veniam hic ullam. Vitae voluptatum impedit nulla, eius odio saepe alias libero debitis facere.</p>
+            </div>
+
+            
+            
         </section>
+
     </main>
 
     <script src="navegacion.js"></script>
