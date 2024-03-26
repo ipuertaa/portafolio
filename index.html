@@ -38,8 +38,8 @@
 
             <div class="overlay-content">
                 <a href="#">Sobre mi</a>
-                <a href="#">Mi educación</a>
-                <a href="#">Mi trabajo</a>
+                <a href="#section2">Mi educación</a>
+                <a href="#proy">Mi trabajo</a>
                 <a href="#">CV</a>
             </div>
         </div>
@@ -101,60 +101,56 @@
             </div>
         </section>
 
-        <section class="trabajo">
-            <h1 class="titulo-trabajo">Mi trabajo</h1>
 
-            <div class="contenedor-tarjetas">
-                
-                <section class="tarjetas">
-
-                    <div class="tarjeta" id="tarjeta-aws">
-                        <div class="contenido-tarjeta">
-                            <h2>Titulo</h2>
-                            <a onclick="mostarDetalles(1);" href="#detalles-trabajo">Ver detalles</a>
-                        </div>
+        <section class="proyectos">
+            <h1>Mis proyectos</h1>
+            <div class="cards-section">
+                <div class="indv-card">
+                    <div class="columna-izquierda">
+                        <p>Cloud Services</p>
+                        <img src="imagenes/aws.svg" alt="AWS">
                     </div>
-
-                    <div class="tarjeta" id="tarjeta-web">
-                        <div class="contenido-tarjeta">
-                            <h2>Titulo</h2>
-                            <a onclick="mostarDetalles(2);" href="#detalles-trabajo">Ver detalles</a>
-                        </div>
+                    <div class="columna-derecha">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
                     </div>
-
-                    <div class="tarjeta" id="tarjeta-python">
-                        <div class="contenido-tarjeta">
-                            <h2>Titulo</h2>
-                            <a onclick="mostarDetalles(3);" href="#detalles-trabajo">Ver detalles</a>
-                        </div>
-                    </div>
-
-                    <div class="tarjeta" id="tarjeta-micro">
-                        <div class="contenido-tarjeta">
-                            <h2>Titulo</h2>
-                            <a onclick="mostarDetalles(4);" href="#detalles-trabajo">Ver detalles</a>
-                        </div>
-                    </div> 
-                </section>
-            
-            </div>
-
-            <div id="detalles-trabajo">
-                <div class="holis">
-                    <h1 id="titulo-detalles">Aquí van los detalles del trabajo</h1>
-                    <a onclick="closeDetalles();" href="#detalles-trabajo" class="cerrar">&times;</a>
-
                 </div>
-            
-                
-
-            
-                <p id="texto-detalles">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum quaerat quo, incidunt magni pariatur sequi veniam hic ullam. Vitae voluptatum impedit nulla, eius odio saepe alias libero debitis facere.</p>
+    
+                <div class="indv-card">
+                    <div class="columna-izquierda">
+                        <p>Desarrollo web</p>
+                        <img src="imagenes/web.svg" alt="WEB">
+                    </div>
+                    <div class="columna-derecha">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                    </div>
+                </div>
+    
+                <div class="indv-card">
+                    <div class="columna-izquierda">
+                        <p>Python</p>
+                        <img src="imagenes/python.svg" alt="PYTHON">
+                    </div>
+                    <div class="columna-derecha">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                    </div>
+                </div>
+    
+                <div class="indv-card">
+                    <div class="columna-izquierda">
+                        <p>Otros proyectos</p>
+                        <img src="imagenes/stm32.svg" alt="STM">
+                    </div>
+                    <div class="columna-derecha">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                    </div>
+                </div>
+    
             </div>
-
-            
-            
+    
         </section>
+
+
+        
 
     </main>
 

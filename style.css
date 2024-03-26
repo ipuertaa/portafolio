@@ -174,88 +174,55 @@ details p{
     background-color: aliceblue;
 }
 
-.trabajo{
-    background-color: gainsboro;
+
+.proyectos{
+    background-color: yellow;
     min-height: 100vh;
-    padding: 50px 20px;
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
-.titulo-trabajo{
-    margin: 20px 20px 80px 20px;
-}
-
-.contenedor-tarjetas{
-    background-color: blueviolet;
-    width: 1000px;
-    min-height: 250px;
-}
-
-.tarjetas{
+.cards-section{
     display: grid;
-    gap: 35px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: blueviolet;
+    width: fit-content;
+    margin: 40px;
+}
+
+
+.indv-card{
+    border: 2px solid gray;
+    display: flex;
+    width: 510px;
+}
+
+.columna-izquierda{
     background-color: aqua;
-    justify-content: center;
-}
-
-.tarjeta{
-    width: 200px;
-    height: 200px;
-    border: 2px solid blue;
-}
-
-.contenido-tarjeta{
-    height: 200px;
+    width: 30%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
 }
 
-.contenido-tarjeta:hover{
-    background-color: blue;
-    opacity: 0.9;
+.columna-izquierda img{
+    width: 80%;
+
 }
 
-
-#tarjeta-aws{
-    background-image: url(imagenes/aws.svg);
-    background-size: cover;
-    background-position: center;
+.columna-derecha{
+    background-color: antiquewhite;
+    width: 70%;
+    height: 200px;
+    padding: 10px;
 }
-
-#tarjeta-web{
-    background-image: url(imagenes/web.svg);
-    background-size: cover;
-    background-position: center;
-}
-
-#tarjeta-python{
-    background-image: url(imagenes/python.svg);
-    background-size: cover;
-    background-position: center;
-}
-
-#tarjeta-micro{
-    background-image: url(imagenes/stm32.svg);
-    background-size: cover;
-    background-position: center;
-}
-
-#detalles-trabajo{
-    background-color: gainsboro;
-    margin-top: 50px;
-    max-width: 800px;
-    display: none;
-}
-
 
 
 
@@ -302,6 +269,10 @@ details p{
         width: auto;
     }
 
+    .indv-card{
+        width: auto;
+    }
+
     
 }
 
@@ -310,6 +281,16 @@ details p{
     .contenedor-tarjetas, .detalles-trabajo{
         width: 90%;
     }
+}
+
+@media screen and (max-width: 1080px){
+    .cards-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;     
+    }
+
 }
 
 
