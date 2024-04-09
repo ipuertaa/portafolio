@@ -20,40 +20,37 @@
 <body>
 
     <header>
-        <div class="logo">
-            <img src="imagenes/cloud.png" alt="Cloud">
-        </div>
+        <!--Barra de navegación-->
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Mi educación</a></li>
-                <li><a href="#">Mi trabajo</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a class="nav-opcion"  href="#sobre-mi">Sobre mi</a></li>
+                <li><a class="nav-opcion"  href="#educacion">Mi educación</a></li>
+                <li><a class="nav-opcion"  href="#proyectos">Mi trabajo</a></li>
+                <li><a class="nav-opcion"  href="#">CV</a></li>
             </ul>
         </nav>
-        <a onclick="openNav();" class="desplegable" href="#"><button>Menu</button> </a>
 
-        <div class="overlay" id="mobile-menu">
-            <a onclick="closeNav();" href="" class="close">&times;</a>
+        <!--Menú de navegación responsive-->
+        <div class="menu-container">
+            <label for="menu-checkbox" class="menu-toggler">&#9776</label>
+            <input type="checkbox" id="menu-checkbox">
 
-            <div class="overlay-content">
-                <a href="#">Sobre mi</a>
-                <a href="#section2">Mi educación</a>
-                <a href="#proy">Mi trabajo</a>
-                <a href="#">CV</a>
+            <div class="menu-responsive">
+                <a class="responsive-items" href="#sobre-mi" onclick="closeMenu();">Sobre mi</a>
+                <a class="responsive-items" href="#educacion" onclick="closeMenu();" >Mi educacion</a>
+                <a class="responsive-items" href="#proyectos" onclick="closeMenu();" >Mi trabajo</a>
+                <a class="responsive-items" href="" onclick="closeMenu();" >CV</a>
             </div>
         </div>
-
-        
-
     </header>
 
     <main>
-        <section class="sobremi">
+        <section class="sobremi" id="sobre-mi">
             <div class="info_personal">
-                <p>HOLA</p>
-                <h1>Soy Isabel Puerta Alvarez</h1>
-                <p>AWS Cloud Practitioner</p>
+                <h1 class="saludo"> <span>&#128075</span> ¡HOLA!</h1>
+                
+                <h2 class="nombre">Soy Isabel Puerta Alvarez</h2>
+                <p class="profesion">AWS Cloud Practitioner | Back-end developer | Ingeniera Física</p>
     
                 <p class="intro">
                     Soy estudiante de ingeniería física y certificada AWS Cloud Practitioner. 
@@ -67,7 +64,7 @@
             <img class="foto" src="imagenes/foto_isabel.jpg" alt="Foto personal">
         </section>
 
-        <section class="educacion">
+        <section class="educacion" id="educacion">
             <div class="texto-educacion">
                 <h1>Mi educación:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia beatae et quas! Officia praesentium sed laborum iusto nam, sequi eaque quisquam dolorem amet non, quasi debitis, architecto esse repellat?</p>
@@ -102,7 +99,7 @@
         </section>
 
 
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <h1>Mis proyectos</h1>
             <div class="cards-section">
                 <div class="indv-card">
@@ -150,7 +147,6 @@
         </section>
 
     </main>
-
     <script src="navegacion.js"></script>
 </body>
 </html>

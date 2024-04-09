@@ -3,20 +3,17 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+/*Estilos barra de navegacion*/
 header{
+
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: aqua;
+    height: 8vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-    height: 10vh;
-}
-
-
-header .logo img {
-    height: 60px;
-    width: auto;
+    justify-content: space-evenly;
 }
 
 .navegacion .menu li{
@@ -29,90 +26,79 @@ header .logo img {
     transform: scale(1.1);
 }
 
-
-a{
+.nav-opcion{
     text-decoration: none;
     color: black;
     font-size: 14px;
 }
 
-a:hover{
+.nav-opcion:hover{
     text-decoration: underline;
     text-decoration-color: blueviolet;
     text-underline-offset: 8px;
 }
 
-.desplegable{
+/*Estilos menu de navegacion (responsive only)*/
+.menu-container{
+    width: 30px;
+    height: 30px;
     display: none;
 }
 
-
-
-/* Estilo para el menú desplegable */
-header .overlay{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1; /*Para que se sobreponga*/
-    left: 0;
-    top: 0;
-    background-color: blanchedalmond;
-    overflow: hidden;
-    transition: all 0.3s ease 0s;
-
-}
-
-header .overlay .overlay-content{
+.menu-toggler{
+    cursor: pointer;
+    user-select: none;
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-toggler:hover{
+    background-color: orange;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+.menu-responsive{
+    display: none;
+    flex-direction: column;
+
+    width: 150px;
+    height: auto;
+    background-color: white;
+    padding: 8px;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#menu-checkbox:checked + .menu-responsive{
+    display: flex;
+}
+
+.responsive-items{
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 
-header .overlay a{
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
-    color: azure;
-}
-
-header .overlay a:hover,
-header .overlay a:focus{
-    color:brown;
-}
-
-header .overlay .close{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 65px;
-}
-
-
-
-@media screen and (max-height:450px){
-    header .overlay a{
-        font-size: 20px;
-    }
-    
-    header .overlay .close{
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-
+/*Estilos seccion info personal*/
 .sobremi{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
-    height: 90vh;
+    height: 100vh;
 
 }
 
@@ -122,6 +108,21 @@ header .overlay .close{
     margin: 20px;
 }
 
+.saludo{
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.nombre{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.profesion{
+    font-weight: 200;
+    
+}
 
 .foto{
     width: 300px;
@@ -133,6 +134,8 @@ header .overlay .close{
     /*justify-content: space-between;*/
 }
 
+
+/*Estilos seccion educacion*/
 .educacion{
     background-color: palevioletred;
     display: flex;
@@ -147,8 +150,6 @@ header .overlay .close{
     margin: auto;
     padding: 30px;
     width: 300px;
-
-
 }
 
 .desplegables{
@@ -159,9 +160,7 @@ header .overlay .close{
     gap: 20px;
     width: 400px;
     margin: auto;
-    
 }
-
 
 summary{
     cursor: pointer;
@@ -174,7 +173,7 @@ details p{
     background-color: aliceblue;
 }
 
-
+/*Estilos seccion proyectos*/
 .proyectos{
     background-color: yellow;
     min-height: 100vh;
@@ -199,7 +198,7 @@ details p{
 .indv-card{
     border: 2px solid gray;
     display: flex;
-    width: 510px;
+    width: 400px;
 }
 
 .columna-izquierda{
@@ -220,7 +219,7 @@ details p{
 .columna-derecha{
     background-color: antiquewhite;
     width: 70%;
-    height: 200px;
+    height: 180px;
     padding: 10px;
 }
 
@@ -240,6 +239,16 @@ details p{
 
     .desplegable{
         display: inherit;
+    }
+
+    header{
+        background-color: transparent;
+    }
+
+    .menu-container{
+        display: block;
+        position: fixed;
+        left: 15px;
     }
 
     .sobremi{
