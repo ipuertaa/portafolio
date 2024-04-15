@@ -26,12 +26,11 @@
                 <li><a class="nav-opcion"  href="#sobre-mi">Sobre mi</a></li>
                 <li><a class="nav-opcion"  href="#educacion">Mi educación</a></li>
                 <li><a class="nav-opcion"  href="#proyectos">Mi trabajo</a></li>
-                <li><a class="nav-opcion"  href="#">CV</a></li>
             </ul>
         </nav>
 
         <!--Menú de navegación responsive-->
-        <div class="menu-container">
+        <!-- <div class="menu-container">
             <label for="menu-checkbox" class="menu-toggler">&#9776</label>
             <input type="checkbox" id="menu-checkbox">
 
@@ -39,9 +38,8 @@
                 <a class="responsive-items" href="#sobre-mi" onclick="closeMenu();">Sobre mi</a>
                 <a class="responsive-items" href="#educacion" onclick="closeMenu();" >Mi educacion</a>
                 <a class="responsive-items" href="#proyectos" onclick="closeMenu();" >Mi trabajo</a>
-                <a class="responsive-items" href="" onclick="closeMenu();" >CV</a>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <main>
@@ -49,10 +47,10 @@
             <div class="info_personal">
                 <h1 class="saludo"> <span>&#128075</span> ¡HOLA!</h1>
                 
-                <h2 class="nombre">Soy Isabel Puerta Alvarez</h2>
-                <p class="profesion">AWS Cloud Practitioner | Back-end developer | Ingeniera Física</p>
+                <h2 class="titulos">Soy Isabel Puerta Alvarez</h2>
+                <p class="subtitulos">AWS Cloud Practitioner | Back-end developer | Ingeniera Física</p>
     
-                <p class="intro">
+                <p class="parrafo">
                     Soy estudiante de ingeniería física y certificada AWS Cloud Practitioner. 
                     
                     Me apasiona la tecnología y las arquitecturas en la nube. 
@@ -60,14 +58,16 @@
     
                     Creo en el poder transformador del conocimiento. Estoy comprometida a seguir aprendiendo cada día.
                 </p>
+                <a href="#">Descargar CV</a>
             </div>
             <img class="foto" src="imagenes/foto_isabel.jpg" alt="Foto personal">
         </section>
 
         <section class="educacion" id="educacion">
+            
             <div class="texto-educacion">
-                <h1>Mi educación:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia beatae et quas! Officia praesentium sed laborum iusto nam, sequi eaque quisquam dolorem amet non, quasi debitis, architecto esse repellat?</p>
+                <h2 class="titulos">Mi educación:</h2>
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia beatae et quas! Officia praesentium sed laborum iusto nam, sequi eaque quisquam dolorem amet non, quasi debitis, architecto esse repellat?</p>
             </div>
 
             <div class="desplegables">
@@ -96,49 +96,51 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam, temporibus modi, incidunt alias aliquid distinctio consequatur consectetur minus at, vel nobis eum debitis impedit! Reiciendis repudiandae quidem ullam atque!</p>
                 </details>
             </div>
+
+            
         </section>
 
 
         <section class="proyectos" id="proyectos">
-            <h1>Mis proyectos</h1>
+            <h2 class="titulos">Mis proyectos</h2>
             <div class="cards-section">
                 <div class="indv-card">
                     <div class="columna-izquierda">
-                        <p>Cloud Services</p>
+                        <h3 class="titulo-card">Cloud Services</h3>
                         <img src="imagenes/aws.svg" alt="AWS">
                     </div>
                     <div class="columna-derecha">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                        <p class="texto-tarjeta" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
                     </div>
                 </div>
     
                 <div class="indv-card">
                     <div class="columna-izquierda">
-                        <p>Desarrollo web</p>
+                        <h3 class="titulo-card">Desarrollo web</h3>
                         <img src="imagenes/web.svg" alt="WEB">
                     </div>
                     <div class="columna-derecha">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                        <p class="texto-tarjeta" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
                     </div>
                 </div>
     
                 <div class="indv-card">
                     <div class="columna-izquierda">
-                        <p>Python</p>
+                        <h3 class="titulo-card">Python</h3>
                         <img src="imagenes/python.svg" alt="PYTHON">
                     </div>
                     <div class="columna-derecha">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                        <p class="texto-tarjeta" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
                     </div>
                 </div>
     
                 <div class="indv-card">
                     <div class="columna-izquierda">
-                        <p>Otros proyectos</p>
+                        <h3 class="titulo-card">Otros proyectos</h3>
                         <img src="imagenes/stm32.svg" alt="STM">
                     </div>
                     <div class="columna-derecha">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
+                        <p class="texto-tarjeta" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea nesciunt magnam autem aliquam atque quidem, quaerat nemo pariatur rerum accusantium reprehenderit nam, quis velit nihil consectetur quod obcaecati inventore.</p>
                     </div>
                 </div>
     

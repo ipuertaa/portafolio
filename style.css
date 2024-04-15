@@ -1,15 +1,28 @@
+:root {
+    --color-fondo: #EDF6F9; 
+    --rosa-claro: #FFDDD2; 
+    --rosa-oscuro: #E29578;
+    --azul-claro: #83C5BE;
+    --azul-oscuro: #006D77;
+
+}
+
+section[id]{
+    scroll-margin-top: 80px;
+}
+
 body{
     background-color: aliceblue;
     font-family: "Inter", sans-serif;
+    background-color: var(--color-fondo);
 }
 
 /*Estilos barra de navegacion*/
 header{
-
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--azul-oscuro);
     height: 8vh;
     display: flex;
     align-items: center;
@@ -28,7 +41,7 @@ header{
 
 .nav-opcion{
     text-decoration: none;
-    color: black;
+    color: var(--rosa-claro);
     font-size: 14px;
 }
 
@@ -97,7 +110,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
     height: 100vh;
 
 }
@@ -114,14 +126,24 @@ header{
     margin-bottom: 40px;
 }
 
-.nombre{
-    font-weight: 500;
-    font-size: 30px;
+.titulos{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+
 }
 
-.profesion{
+.subtitulos{
     font-weight: 200;
+    margin-bottom: 10px;
+
     
+}
+
+.parrafo{
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .foto{
@@ -137,23 +159,24 @@ header{
 
 /*Estilos seccion educacion*/
 .educacion{
-    background-color: palevioletred;
     display: flex;
     flex-direction: row;
-    
     padding: 30px;
-    min-height: 100vh;
+    min-height: fit-content;
+    background-color: var(--rosa-claro);
+    border-radius: 50% 20% / 10% 40%;
+    margin: 10px;
 }
 
+
+
 .texto-educacion{
-    background-color: yellow;
     margin: auto;
     padding: 30px;
     width: 300px;
 }
 
 .desplegables{
-    background-color: blueviolet;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -164,19 +187,19 @@ header{
 
 summary{
     cursor: pointer;
-    background-color: burlywood;
+    background-color: var(--rosa-oscuro);
     padding: 10px;
+    color: var(--azul-oscuro);
 }
 
 details p{
     padding: 10px;
-    background-color: aliceblue;
+    background-color: var(--color-fondo);
 }
 
 /*Estilos seccion proyectos*/
 .proyectos{
-    background-color: yellow;
-    min-height: 100vh;
+    min-height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,26 +212,33 @@ details p{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: blueviolet;
     width: fit-content;
     margin: 40px;
 }
 
 
 .indv-card{
-    border: 2px solid gray;
     display: flex;
     width: 400px;
+    box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .columna-izquierda{
-    background-color: aqua;
+    background-color: var(--azul-claro);
     width: 30%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+.titulo-card{
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .columna-izquierda img{
@@ -217,10 +247,16 @@ details p{
 }
 
 .columna-derecha{
-    background-color: antiquewhite;
+    background-color: var(--color-fondo);
     width: 70%;
     height: 180px;
     padding: 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.texto-tarjeta{
+    font-weight: 200;
+    font-size: 15px;
 }
 
 
@@ -233,26 +269,25 @@ details p{
 
 
 @media screen and (max-width: 780px){
-    .menu{
+    /* .menu{
         display: none;
-    }
+    } */
 
-    .desplegable{
+    /* .desplegable{
         display: inherit;
-    }
+    } */
 
-    header{
-        background-color: transparent;
-    }
+ 
 
-    .menu-container{
+    /* .menu-container{
         display: block;
         position: fixed;
         left: 15px;
-    }
+    } */
 
     .sobremi{
         flex-direction: column;
+        padding-top: 100px;
     }
     
     .info_personal{
