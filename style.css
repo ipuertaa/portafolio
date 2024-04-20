@@ -47,7 +47,7 @@ header{
 
 .nav-opcion:hover{
     text-decoration: underline;
-    text-decoration-color: blueviolet;
+    text-decoration-color: var(--rosa-claro);
     text-underline-offset: 8px;
 }
 
@@ -146,6 +146,26 @@ header{
     margin-bottom: 20px;
 }
 
+.boton-cv{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--azul-claro);
+    box-shadow: 4px 4px var(--azul-oscuro);
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+}
+
+.boton-cv:hover{
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
 .foto{
     width: 300px;
     height: 400px;
@@ -217,11 +237,18 @@ details p{
 }
 
 
+
+
+
 .indv-card{
     display: flex;
     width: 400px;
     box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+}
+
+.indv-card:hover{
+    box-shadow: 1px 4px 10px var(--rosa-oscuro);
 }
 
 .columna-izquierda{
@@ -287,7 +314,7 @@ details p{
 
     .sobremi{
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 120px;
     }
     
     .info_personal{
