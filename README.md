@@ -3,6 +3,8 @@
 
 ## Descripción: 
 
-Desarrollo de una página web como registro de mi aprendizaje y herramientas profesionales de Cloud Practitioner y desarrolladora web.
+Desarrollo de una página web de portafolio personal - Cloud Practitioner y desarrolladora web.
+
+Puedes seguir el avance del proyecto en [GitHub pages](https://ipuertaa.github.io/portafolio/)
 
 
